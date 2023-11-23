@@ -7,7 +7,7 @@ export default function Codes() {
     const [responce, setResponce] = useState('');
     const fetchData = async () => {
         try {
-            const response2 = await fetch('http://localhost:3001/getCode');
+            const response2 = await fetch('https://wealthupbackend.vercel.app/getCode');
             const data2 = await response2.json();
             setCode(data2.code);
         } catch (error) {
@@ -21,7 +21,7 @@ export default function Codes() {
 
     const checkCode = async () => {
         try {
-            fetch('http://localhost:3001/checkCode', {
+            fetch('https://wealthupbackend.vercel.app/checkCode', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
