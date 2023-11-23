@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,7 +9,7 @@ export default function App() {
                 <p className='w-[25%] text-[1rem] font-extralight text-[#fff] text-center mx-auto'>Use WeathoMeter to get a free report
                     card for your finances- within minutes! </p>
                 <div className='mx-auto w-[30%] my-3 flex'>
-                    <Link href={'/'} className='bg-[#FB7306] mx-auto px-6 py-3 rounded-3xl text-white font-semibold'>
+                    <Link href={'/Codes'} className='bg-[#FB7306] mx-auto px-6 py-3 rounded-3xl text-white font-semibold'>
                         Get Started
                     </Link>
                 </div>
