@@ -7,7 +7,12 @@ export default function Codes() {
     const [responce, setResponce] = useState('');
     const fetchData = async () => {
         try {
-            const response2 = await fetch('https://wealthupbackend.vercel.app/getCode');
+            const response2 = await fetch('https://wealthupbackend.vercel.app/getCode', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
             const data2 = await response2.json();
             setCode(data2.code);
         } catch (error) {
